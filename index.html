@@ -2,10 +2,262 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Portfolio Works!</h1>
-    <p>環境構築テスト成功</p>
+  <body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+    <!-- ヘッダー / ナビゲーション -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+      <div
+        class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="font-bold text-lg text-slate-900 tracking-tight">
+          Portfolio
+        </div>
+        <nav class="space-x-6 text-sm text-slate-600">
+          <a href="#about" class="hover:text-blue-600 transition">About</a>
+          <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+          <a href="#projects" class="hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-20">
+      <!-- ヒーローセクション -->
+      <section class="text-center py-10 space-y-4">
+        <h1
+          class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"
+        >
+          Web Application Engineer
+        </h1>
+        <p class="text-slate-600 max-w-xl mx-auto text-base">
+          バックエンド・データベース設計・Web開発の知見を広げ、信頼性の高いシステム構築を目指して日々学習と開発を行っています。
+        </p>
+        <div class="pt-2 flex justify-center gap-4">
+          <a
+            href="#projects"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition"
+            >制作物を見る</a
+          >
+          <a
+            href="#contact"
+            class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium px-5 py-2.5 rounded-lg text-sm transition"
+            >リンク・連絡先</a
+          >
+        </div>
+      </section>
+
+      <!-- 自己紹介 (About) -->
+      <section id="about" class="scroll-mt-20">
+        <h2
+          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
+        >
+          About Me
+        </h2>
+        <div
+          class="bg-white p-6 rounded-xl border border-slate-200 space-y-3 text-slate-700"
+        >
+          <p>
+            Webシステムの開発・保守、データベース設計に関心を持ち、基礎から実践まで継続的にキャッチアップを進めています。
+          </p>
+          <p>
+            学んだ技術やトラブルシューティングの手順はNotionで蓄積し、Qiita等でアウトプットとして公開することで、再現性のある知識の定着を意識しています。
+          </p>
+        </div>
+      </section>
+
+      <!-- スキル一覧 (Skills) -->
+      <section id="skills" class="scroll-mt-20">
+        <h2
+          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
+        >
+          Technical Skills
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <!-- 言語 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200">
+            <h3
+              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
+            >
+              Languages
+            </h3>
+            <ul class="space-y-1.5 text-sm text-slate-600">
+              <li>• PHP</li>
+              <li>• SQL</li>
+              <li>• JavaScript / HTML5 / CSS3</li>
+            </ul>
+          </div>
+
+          <!-- フレームワーク・DB -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200">
+            <h3
+              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
+            >
+              DB & Infrastructure
+            </h3>
+            <ul class="space-y-1.5 text-sm text-slate-600">
+              <li>• MySQL</li>
+              <li>• Docker（環境構築）</li>
+              <li>• Git / GitHub</li>
+            </ul>
+          </div>
+
+          <!-- ツール・その他 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200">
+            <h3
+              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
+            >
+              Tools & Platforms
+            </h3>
+            <ul class="space-y-1.5 text-sm text-slate-600">
+              <li>• VS Code</li>
+              <li>• Notion / Qiita</li>
+              <li>• ServiceNow (PDI)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 制作物 (Projects) -->
+      <section id="projects" class="scroll-mt-20">
+        <h2
+          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
+        >
+          Projects & Works
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- 制作物カード 1 -->
+          <div
+            class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-3">
+              <div
+                class="text-xs font-semibold text-blue-600 uppercase tracking-wider"
+              >
+                Web Application
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                ポートフォリオサイト（本サイト）
+              </h3>
+              <p class="text-sm text-slate-600">
+                自身のスキルスタックと学習ログ、制作物を一元管理するために制作したシングルページWebサイト。GitHub
+                Pagesにて自動デプロイを行っています。
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >HTML5</span
+                >
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >GitHub Pages</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium"
+            >
+              <a
+                href="https://github.com/MASANORI-HUE/Repository-name-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 hover:underline"
+                >GitHub →</a
+              >
+            </div>
+          </div>
+
+          <!-- 制作物カード 2 (ダミー / 次に載せる作品の枠) -->
+          <div
+            class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-3">
+              <div
+                class="text-xs font-semibold text-emerald-600 uppercase tracking-wider"
+              >
+                Web App / API
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">
+                タスク / 書籍管理アプリ（開発中）
+              </h3>
+              <p class="text-sm text-slate-600">
+                CRUD機能とDBリレーションを備えたバックエンド中心のWebアプリケーション。SQLの効率的なクエリ設計とバリデーションを意識して実装。
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >PHP</span
+                >
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >MySQL</span
+                >
+                <span
+                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
+                  >Docker</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium"
+            >
+              <a href="#" class="text-slate-400 cursor-not-allowed"
+                >GitHub (Coming soon)</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 連絡先・外部リンク (Contact) -->
+      <section id="contact" class="scroll-mt-20">
+        <h2
+          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
+        >
+          Links & Contact
+        </h2>
+        <div
+          class="bg-white p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-sm text-slate-600">
+            技術記事の投稿や日々のコード管理は以下のプラットフォームで行っています。
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://qiita.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition"
+            >
+              Qiita
+            </a>
+            <a
+              href="https://github.com/MASANORI-HUE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm bg-slate-800 hover:bg-slate-900 text-white font-medium px-4 py-2 rounded-lg transition"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer
+      class="border-t border-slate-200 py-6 text-center text-xs text-slate-400"
+    >
+      &copy; 2026 Portfolio. All rights reserved.
+    </footer>
   </body>
 </html>
