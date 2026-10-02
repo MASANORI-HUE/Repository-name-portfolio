@@ -176,44 +176,30 @@
             </div>
           </div>
 
-          <!-- 制作物カード 2 (ダミー / 次に載せる作品の枠) -->
-          <div
-            class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between"
-          >
-            <div class="p-6 space-y-3">
-              <div
-                class="text-xs font-semibold text-emerald-600 uppercase tracking-wider"
-              >
-                Web App / API
-              </div>
-              <h3 class="text-lg font-bold text-slate-900">
-                タスク / 書籍管理アプリ（開発中）
-              </h3>
-              <p class="text-sm text-slate-600">
-                CRUD機能とDBリレーションを備えたバックエンド中心のWebアプリケーション。SQLの効率的なクエリ設計とバリデーションを意識して実装。
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-2">
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >PHP</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >MySQL</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >Docker</span
-                >
-              </div>
+          <!-- 制作物カード 2: Qiita技術記事 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="p-6 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Technical Article</span>
+              <span class="text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full font-medium">Qiita</span>
             </div>
-            <div
-              class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium"
-            >
-              <a href="#" class="text-slate-400 cursor-not-allowed"
-                >GitHub (Coming soon)</a
-              >
+            <h3 class="text-lg font-bold text-slate-900 leading-snug">
+              【Git】push時に「Permission to ... denied to ... 403」が出たときの原因と2つの解決策
+            </h3>
+            <p class="text-sm text-slate-600">
+              複数アカウント管理時に発生するWindows資格情報キャッシュ起因の403エラーを解説。共同開発者（Collaborator）権限付与と資格情報リセットの2通りの解決策をまとめています。
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">Git</span>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">GitHub</span>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">VS Code</span>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">トラブルシューティング</span>
             </div>
+          </div>
+          <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium">
+            <a href="https://qiita.com/masa05140323" target="_blank" rel="noopener noreferrer" class="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center gap-1">
+              Qiitaで記事を読む <span>→</span>
+            </a>
           </div>
         </div>
       </section>
