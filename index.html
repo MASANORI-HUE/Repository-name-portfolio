@@ -1,334 +1,263 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Engineer Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
-    <!-- ヘッダー / ナビゲーション（ダークネイビー版） -->
-    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
-      <div
-        class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <div class="font-bold text-lg text-white tracking-tight">Portfolio</div>
-        <nav class="space-x-6 text-sm text-slate-300">
-          <a href="#about" class="hover:text-blue-400 transition">About</a>
-          <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
-          <a href="#projects" class="hover:text-blue-400 transition"
-            >Projects</a
-          >
-          <a href="#articles" class="hover:text-blue-400 transition"
-            >Articles</a
-          >
-          <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineer Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+  <!-- ヘッダー / ナビゲーション（ダークネイビー版） -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="font-bold text-lg text-white tracking-tight">Portfolio</div>
+      <nav class="space-x-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#articles" class="hover:text-blue-400 transition">Articles</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-20">
+    <!-- ヒーローセクション -->
+    <section class="text-center py-10 space-y-4">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        Frontend Developer
+      </h1>
+      <p class="text-slate-600 max-w-xl mx-auto text-base">
+        HTML5 / CSS3 / JavaScript
+        を中心に、直感的でレスポンシブなUI設計と外部APIと連携した動的Webアプリケーションの制作に取り組んでいます。
+      </p>
+      <div class="pt-2 flex justify-center gap-4">
+        <a href="#projects"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition">制作物を見る</a>
+        <a href="#articles"
+          class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium px-5 py-2.5 rounded-lg text-sm transition">技術記事一覧</a>
       </div>
-    </header>
+    </section>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 space-y-20">
-      <!-- ヒーローセクション -->
-      <section class="text-center py-10 space-y-4">
-        <h1
-          class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"
-        >
-          Frontend Developer
-        </h1>
-        <p class="text-slate-600 max-w-xl mx-auto text-base">
-          HTML5 / CSS3 / JavaScript
-          を中心に、直感的でレスポンシブなUI設計と外部APIと連携した動的Webアプリケーションの制作に取り組んでいます。
+    <!-- 自己紹介 (About) -->
+    <section id="about" class="scroll-mt-20">
+      <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">
+        About Me
+      </h2>
+      <div class="bg-white p-6 rounded-xl border border-slate-200 space-y-3 text-slate-700">
+        <p>
+          HTML5・CSS3（Tailwind
+          CSS）・JavaScriptを中心としたフロントエンド開発に注力し、直感的で使いやすいUI・動的なWebアプリケーションの制作に取り組んでいます。
         </p>
-        <div class="pt-2 flex justify-center gap-4">
-          <a
-            href="#projects"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition"
-            >制作物を見る</a
-          >
-          <a
-            href="#articles"
-            class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium px-5 py-2.5 rounded-lg text-sm transition"
-            >技術記事一覧</a
-          >
-        </div>
-      </section>
+        <p>
+          基礎の構文理解にとどまらず、API連携やレスポンシブ対応など実践的な実装を重視しています。制作過程で得た知見やエラー解決ログはNotionに蓄積し、Qiita等でのアウトプットを通じて再現性のあるスキル定着を意識しています。
+        </p>
+      </div>
+    </section>
 
-      <!-- 自己紹介 (About) -->
-      <section id="about" class="scroll-mt-20">
-        <h2
-          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
-        >
-          About Me
-        </h2>
+    <!-- スキル一覧 (Skills) -->
+    <section id="skills" class="scroll-mt-20">
+      <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">
+        Technical Skills
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600">
+            Frontend Core
+          </h3>
+          <ul class="space-y-1.5 text-sm text-slate-600">
+            <li>• HTML5（セマンティックマークアップ）</li>
+            <li>• CSS3（Flexbox / CSS Grid）</li>
+            <li>• JavaScript（ES6+ / DOM操作 / Fetch API）</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600">
+            Styling & UI
+          </h3>
+          <ul class="space-y-1.5 text-sm text-slate-600">
+            <li>• Tailwind CSS（ユーティリティ設計）</li>
+            <li>• レスポンシブWebデザイン（モバイル対応）</li>
+            <li>• UI/UXの基本設計・アクセシビリティ</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600">
+            Tools & Workflow
+          </h3>
+          <ul class="space-y-1.5 text-sm text-slate-600">
+            <li>• VS Code</li>
+            <li>• Git / GitHub / GitHub Pages</li>
+            <li>• Notion（学習ログ）/ Qiita（技術発信）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 制作物 (Projects) -->
+    <section id="projects" class="scroll-mt-20">
+      <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">
+        Projects & Works
+      </h2>
+      <!-- 制作物カード（完成版用テンプレ） -->
+      <div
+        class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+        <div class="p-6 space-y-3">
+          <!-- カテゴリバッジ -->
+          <div class="text-xs font-semibold text-blue-600 uppercase tracking-wider">
+            Web Application <!-- または Corporate Site / Tool など -->
+          </div>
+          <!-- 成果物タイトル -->
+          <h3 class="text-lg font-bold text-slate-900 leading-snug">
+            制作物・サイト名
+          </h3>
+          <!-- 概要・工夫点（2〜3行でアピール） -->
+          <p class="text-sm text-slate-600">
+            制作目的やターゲット、実装時に意識したポイントを記載します（例：モバイル表示時の操作性向上、非同期API連携による検索機能の実装など）。
+          </p>
+          <!-- 使用技術スタック -->
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">HTML5</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">CSS3 / Tailwind CSS</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- 下部リンク（GitHubソースコード ＆ 公開デモサイト） -->
         <div
-          class="bg-white p-6 rounded-xl border border-slate-200 space-y-3 text-slate-700"
-        >
-          <p>
-            HTML5・CSS3（Tailwind
-            CSS）・JavaScriptを中心としたフロントエンド開発に注力し、直感的で使いやすいUI・動的なWebアプリケーションの制作に取り組んでいます。
-          </p>
-          <p>
-            基礎の構文理解にとどまらず、API連携やレスポンシブ対応など実践的な実装を重視しています。制作過程で得た知見やエラー解決ログはNotionに蓄積し、Qiita等でのアウトプットを通じて再現性のあるスキル定着を意識しています。
-          </p>
-        </div>
-      </section>
-
-      <!-- スキル一覧 (Skills) -->
-      <section id="skills" class="scroll-mt-20">
-        <h2
-          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
-        >
-          Technical Skills
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div class="bg-white p-5 rounded-xl border border-slate-200">
-            <h3
-              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
-            >
-              Frontend Core
-            </h3>
-            <ul class="space-y-1.5 text-sm text-slate-600">
-              <li>• HTML5（セマンティックマークアップ）</li>
-              <li>• CSS3（Flexbox / CSS Grid）</li>
-              <li>• JavaScript（ES6+ / DOM操作 / Fetch API）</li>
-            </ul>
-          </div>
-
-          <div class="bg-white p-5 rounded-xl border border-slate-200">
-            <h3
-              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
-            >
-              Styling & UI
-            </h3>
-            <ul class="space-y-1.5 text-sm text-slate-600">
-              <li>• Tailwind CSS（ユーティリティ設計）</li>
-              <li>• レスポンシブWebデザイン（モバイル対応）</li>
-              <li>• UI/UXの基本設計・アクセシビリティ</li>
-            </ul>
-          </div>
-
-          <div class="bg-white p-5 rounded-xl border border-slate-200">
-            <h3
-              class="font-bold text-slate-900 mb-3 text-sm tracking-wide uppercase text-blue-600"
-            >
-              Tools & Workflow
-            </h3>
-            <ul class="space-y-1.5 text-sm text-slate-600">
-              <li>• VS Code</li>
-              <li>• Git / GitHub / GitHub Pages</li>
-              <li>• Notion（学習ログ）/ Qiita（技術発信）</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- 制作物 (Projects) -->
-      <section id="projects" class="scroll-mt-20">
-        <h2
-          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
-        >
-          Projects & Works
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div
-            class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition"
-          >
-            <div class="p-6 space-y-3">
-              <div
-                class="text-xs font-semibold text-blue-600 uppercase tracking-wider"
-              >
-                Web Application
-              </div>
-              <h3 class="text-lg font-bold text-slate-900">
-                ポートフォリオサイト（本サイト）
-              </h3>
-              <p class="text-sm text-slate-600">
-                自身のスキルスタックと学習ログ、制作物を一元管理するために制作したシングルページWebサイト。GitHub
-                Pagesにて自動デプロイを行っています。
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-2">
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >HTML5</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >Tailwind CSS</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >JavaScript (Fetch API)</span
-                >
-              </div>
-            </div>
-            <div
-              class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium"
-            >
-              <a
-                href="https://github.com/MASANORI-HUE/Repository-name-portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-600 hover:underline"
-                >GitHub →</a
-              >
-            </div>
-          </div>
-
-          <div
-            class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition"
-          >
-            <div class="p-6 space-y-3">
-              <div
-                class="text-xs font-semibold text-blue-600 uppercase tracking-wider"
-              >
-                Frontend App
-              </div>
-              <h3 class="text-lg font-bold text-slate-900">
-                インタラクティブ タスク管理アプリ（開発中）
-              </h3>
-              <p class="text-sm text-slate-600">
-                フレームワークに依存せず、素のJavaScript（Vanilla
-                JS）によるDOM操作とLocalStorageを用いたデータ保持を実装。タスクの追加・完了・削除・フィルタリング機能を備えたレスポンシブWebツール。
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-2">
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >HTML5</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >CSS3 / Tailwind</span
-                >
-                <span
-                  class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded"
-                  >JavaScript (DOM / LocalStorage)</span
-                >
-              </div>
-            </div>
-            <div
-              class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium"
-            >
-              <a href="#" class="text-slate-400 cursor-not-allowed"
-                >GitHub (Coming soon)</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 技術記事 (Articles) ★ここが抜けていたため復活させました★ -->
-      <section id="articles" class="scroll-mt-20">
-        <div class="flex justify-between items-center mb-6">
-          <h2
-            class="text-xl font-bold text-slate-900 border-b-2 border-emerald-600 pb-2 inline-block"
-          >
-            Technical Articles
-          </h2>
-          <a
-            href="https://qiita.com/masa05140323"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-xs font-semibold text-emerald-600 hover:underline"
-          >
-            Qiitaで全記事を見る →
+          class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex justify-between items-center text-xs font-medium">
+          <a href="https://github.com/MASANORI-HUE/リポジトリ名" target="_blank" rel="noopener noreferrer"
+            class="text-slate-600 hover:text-slate-900 font-semibold flex items-center gap-1">
+            GitHub（コード） <span>→</span>
+          </a>
+          <a href="https://公開したデモサイトのURL" target="_blank" rel="noopener noreferrer"
+            class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+            サイトを開く <span>↗</span>
           </a>
         </div>
-
-        <!-- 記事カード展開コンテナ -->
-        <div id="article-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- 読み込み中スケルトンUI -->
-          <div
-            class="bg-white rounded-xl border border-slate-200 p-6 animate-pulse space-y-3"
-          >
-            <div class="h-4 bg-slate-200 rounded w-1/4"></div>
-            <div class="h-6 bg-slate-200 rounded w-3/4"></div>
-            <div class="h-4 bg-slate-200 rounded w-full"></div>
+      </div>
+      <div
+        class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+        <div class="p-6 space-y-3">
+          <div class="text-xs font-semibold text-blue-600 uppercase tracking-wider">
+            Frontend App
           </div>
-        </div>
-      </section>
-
-      <!-- 連絡先・外部リンク (Contact) -->
-      <section id="contact" class="scroll-mt-20">
-        <h2
-          class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block"
-        >
-          Links & Contact
-        </h2>
-        <div
-          class="bg-white p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4"
-        >
+          <h3 class="text-lg font-bold text-slate-900">
+            インタラクティブ タスク管理アプリ（開発中）
+          </h3>
           <p class="text-sm text-slate-600">
-            技術記事の投稿や日々のコード管理は以下のプラットフォームで行っています。
+            フレームワークに依存せず、素のJavaScript（Vanilla
+            JS）によるDOM操作とLocalStorageを用いたデータ保持を実装。タスクの追加・完了・削除・フィルタリング機能を備えたレスポンシブWebツール。
           </p>
-          <div class="flex gap-4">
-            <a
-              href="https://qiita.com/masa05140323"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition"
-            >
-              Qiita
-            </a>
-            <a
-              href="https://github.com/MASANORI-HUE"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm bg-slate-800 hover:bg-slate-900 text-white font-medium px-4 py-2 rounded-lg transition"
-            >
-              GitHub
-            </a>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">HTML5</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">CSS3 / Tailwind</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">JavaScript (DOM / LocalStorage)</span>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex gap-4 text-xs font-medium">
+          <a href="#" class="text-slate-400 cursor-not-allowed">GitHub (Coming soon)</a>
+        </div>
+      </div>
+      </div>
+    </section>
 
-    <!-- フッター（ダークネイビー版） -->
-    <footer
-      class="bg-slate-900 border-t border-slate-800 py-8 text-center text-xs text-slate-400"
-    >
-      &copy; 2026 Portfolio. All rights reserved.
-    </footer>
+    <!-- 技術記事 (Articles) ★ここが抜けていたため復活させました★ -->
+    <section id="articles" class="scroll-mt-20">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-bold text-slate-900 border-b-2 border-emerald-600 pb-2 inline-block">
+          Technical Articles
+        </h2>
+        <a href="https://qiita.com/masa05140323" target="_blank" rel="noopener noreferrer"
+          class="text-xs font-semibold text-emerald-600 hover:underline">
+          Qiitaで全記事を見る →
+        </a>
+      </div>
 
-    <!-- Qiita API 自動取得スクリプト -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const container = document.getElementById("article-list");
-        const QIITA_USER = "masa05140323";
-        const API_URL = `https://qiita.com/api/v2/users/${QIITA_USER}/items?page=1&per_page=4`;
+      <!-- 記事カード展開コンテナ -->
+      <div id="article-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 読み込み中スケルトンUI -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 animate-pulse space-y-3">
+          <div class="h-4 bg-slate-200 rounded w-1/4"></div>
+          <div class="h-6 bg-slate-200 rounded w-3/4"></div>
+          <div class="h-4 bg-slate-200 rounded w-full"></div>
+        </div>
+      </div>
+    </section>
 
-        fetch(API_URL)
-          .then((res) => {
-            if (!res.ok) throw new Error("API通信エラー");
-            return res.json();
-          })
-          .then((articles) => {
-            if (!articles || articles.length === 0) {
-              container.innerHTML = `
+    <!-- 連絡先・外部リンク (Contact) -->
+    <section id="contact" class="scroll-mt-20">
+      <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">
+        Links & Contact
+      </h2>
+      <div
+        class="bg-white p-6 rounded-xl border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-slate-600">
+          技術記事の投稿や日々のコード管理は以下のプラットフォームで行っています。
+        </p>
+        <div class="flex gap-4">
+          <a href="https://qiita.com/masa05140323" target="_blank" rel="noopener noreferrer"
+            class="text-sm bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition">
+            Qiita
+          </a>
+          <a href="https://github.com/MASANORI-HUE" target="_blank" rel="noopener noreferrer"
+            class="text-sm bg-slate-800 hover:bg-slate-900 text-white font-medium px-4 py-2 rounded-lg transition">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター（ダークネイビー版） -->
+  <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center text-xs text-slate-400">
+    &copy; 2026 Portfolio. All rights reserved.
+  </footer>
+
+  <!-- Qiita API 自動取得スクリプト -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("article-list");
+      const QIITA_USER = "masa05140323";
+      const API_URL = `https://qiita.com/api/v2/users/${QIITA_USER}/items?page=1&per_page=4`;
+
+      fetch(API_URL)
+        .then((res) => {
+          if (!res.ok) throw new Error("API通信エラー");
+          return res.json();
+        })
+        .then((articles) => {
+          if (!articles || articles.length === 0) {
+            container.innerHTML = `
               <div class="col-span-full bg-white p-6 rounded-xl border border-slate-200 text-center text-slate-500 text-sm">
                 投稿済みの記事はまだありません。
               </div>`;
-              return;
-            }
+            return;
+          }
 
-            container.innerHTML = articles
-              .map((article) => {
-                const date = new Date(article.created_at).toLocaleDateString(
-                  "ja-JP",
-                  {
-                    year: "numeric",
-                    month: "2-digit",
-                    day: "2-digit",
-                  },
-                );
-                const tagElements = article.tags
-                  .map(
-                    (tag) =>
-                      `<span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">${tag.name}</span>`,
-                  )
-                  .join("");
+          container.innerHTML = articles
+            .map((article) => {
+              const date = new Date(article.created_at).toLocaleDateString(
+                "ja-JP",
+                {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                },
+              );
+              const tagElements = article.tags
+                .map(
+                  (tag) =>
+                    `<span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">${tag.name}</span>`,
+                )
+                .join("");
 
-                return `
+              return `
                 <div class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
                   <div class="p-6 space-y-3">
                     <div class="flex items-center justify-between">
@@ -352,17 +281,18 @@
                   </div>
                 </div>
               `;
-              })
-              .join("");
-          })
-          .catch((err) => {
-            console.error(err);
-            container.innerHTML = `
+            })
+            .join("");
+        })
+        .catch((err) => {
+          console.error(err);
+          container.innerHTML = `
             <div class="col-span-full bg-white p-6 rounded-xl border border-slate-200 text-center text-slate-500 text-sm">
               記事の取得に失敗しました。<a href="https://qiita.com/${QIITA_USER}" class="text-emerald-600 underline">Qiitaマイページ</a>から直接ご確認ください。
             </div>`;
-          });
-      });
-    </script>
-  </body>
+        });
+    });
+  </script>
+</body>
+
 </html>
